@@ -1,0 +1,142 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 2px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    padding: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #2575fc;
+    border-bottom: 2px solid #2575fc;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.sidebar h3 {
+    font-size: 22px;
+    padding: 20px;
+    margin: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f0f0;
+    color: rgba(27, 31, 37, 0.91);
+}
+
+.sidebar i {
+    margin-right: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover i {
+    color: #75a7d8;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar:hover + .content {
+    margin-left: 300px;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.sidebar-footer p {
+    margin: 0;
+    color: #2b2f3c;
+}
+
+.sidebar-footer a {
+    color: #2b2f3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar-footer a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-footer .social-icons {
+    margin-top: 10px;
+}
+
+.sidebar-footer .social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-footer .social-icons a:hover {
+    color: #007bff;
+}
