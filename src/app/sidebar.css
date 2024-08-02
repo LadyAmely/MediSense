@@ -10,56 +10,67 @@ html, body {
 body {
     display: flex;
     flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nowoczesna czcionka */
+    color: #333; /* Domyślny kolor tekstu */
 }
 
 .sidebar {
     width: 250px;
-    background-color: #ffffff;
-    border-right: 2px solid #e0e0e0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff; /* Białe tło sidebaru */
+    border-right: 1px solid #ddd; /* Subtelna granica */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień dla nowoczesnego efektu */
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
     z-index: 999;
     overflow-y: auto;
+    padding-top: 20px; /* Padding u góry dla nagłówków */
 }
 
 .sidebar:hover {
-    width: 300px;
+    width: 280px; /* Rozszerzenie sidebaru przy najechaniu */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Mocniejszy cień przy najechaniu */
 }
 
 .sidebar h1 {
-    font-size: 24px;
+    font-size: 22px;
+    color: #333; /* Ciemny kolor tekstu nagłówka */
     padding: 20px;
     margin: 0;
-    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #eee; /* Subtelna granica na dole nagłówka */
 }
 
 .sidebar h2 {
-    font-size: 24px;
-    padding: 20px;
-    margin: 20px 0;
-    color: #2575fc;
-    border-bottom: 2px solid #2575fc;
+    font-size: 20px;
+    color: #007bff; /* Jasny, nowoczesny kolor */
+    border-bottom: 2px solid #007bff;
+    padding: 15px 20px;
+    margin: 0;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease, border-color 0.3s ease;
 }
 
+.sidebar h2:hover {
+    color: #0056b3; /* Jaśniejszy odcień niebieskiego przy najechaniu */
+    border-bottom-color: #0056b3; /* Dopasowanie koloru podkreślenia */
+}
 
 .sidebar h3 {
-    font-size: 22px;
-    padding: 20px;
-    margin: 0;
-    color: #333;
-    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    padding: 15px 20px;
+    color: #555; /* Jaśniejszy kolor dla lepszej czytelności */
     font-weight: 600;
-    border-bottom: 2px solid #e0e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa; /* Subtelne tło */
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar h3:hover {
+    background-color: #e9ecef; /* Jaśniejsze tło przy najechaniu */
 }
 
 .sidebar ul {
@@ -69,30 +80,32 @@ body {
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ddd; /* Subtelna granica dla pozycji listy */
 }
 
 .sidebar ul li a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 15px 20px;
     text-decoration: none;
-    color: #333;
+    color: #333; /* Ciemniejszy kolor tekstu */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-    background-color: #f0f0f0;
-    color: rgba(27, 31, 37, 0.91);
+    background-color: #f1f3f5; /* Jaśniejsze tło przy najechaniu */
+    color: #007bff; /* Zmiana koloru tekstu przy najechaniu */
 }
 
 .sidebar i {
-    margin-right: 10px;
-    color: #333;
+    margin-right: 15px; /* Większy odstęp między ikoną a tekstem */
+    font-size: 20px; /* Rozmiar ikony */
+    color: #555; /* Jaśniejszy kolor dla ikon */
     transition: color 0.3s ease;
 }
 
 .sidebar ul li a:hover i {
-    color: #75a7d8;
+    color: #007bff; /* Zmiana koloru ikon przy najechaniu */
 }
 
 .content {
@@ -100,24 +113,26 @@ body {
     padding: 20px;
     margin-left: 250px;
     transition: margin-left 0.3s ease;
+    background: #f5f5f5; /* Jasne tło dla treści */
 }
 
 .sidebar:hover + .content {
-    margin-left: 300px;
+    margin-left: 280px; /* Dopasowanie marginesu dla rozszerzonego sidebaru */
 }
 
 .sidebar-footer {
     padding: 20px;
-    border-top: 2px solid #e0e0e0;
+    border-top: 1px solid #ddd; /* Subtelna granica na górze stopki */
+    background-color: #f8f9fa; /* Tło stopki */
 }
 
 .sidebar-footer p {
     margin: 0;
-    color: #2b2f3c;
+    color: #555; /* Jaśniejszy kolor tekstu */
 }
 
 .sidebar-footer a {
-    color: #2b2f3c;
+    color: #007bff; /* Kolor linków */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -131,12 +146,12 @@ body {
 }
 
 .sidebar-footer .social-icons a {
-    color: #333;
+    color: #555; /* Kolor ikon społecznościowych */
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 22px; /* Większe ikony */
     transition: color 0.3s ease;
 }
 
 .sidebar-footer .social-icons a:hover {
-    color: #007bff;
+    color: #007bff; /* Zmiana koloru ikon społecznościowych przy najechaniu */
 }
