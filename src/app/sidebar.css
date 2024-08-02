@@ -15,12 +15,12 @@ body {
 }
 
 .sidebar {
-    width: 250px;
+    width: 270px;
     background: #ffffff;
     border-right: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     height: 100%;
     transition: width 0.3s ease, box-shadow 0.3s ease;
@@ -30,7 +30,7 @@ body {
 }
 
 .sidebar:hover {
-    width: 280px;
+    width: 300px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -45,7 +45,12 @@ body {
 
 .sidebar h2 {
     font-size: 20px;
-    color: #007bff;
+    background: linear-gradient(45deg, #408eda, #387de4, #52b3ef, rgb(42, 208, 228));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid #007bff;
     padding: 15px 20px;
     margin: 0;
@@ -53,6 +58,8 @@ body {
     font-weight: 600;
     transition: color 0.3s ease, border-color 0.3s ease;
 }
+
+
 
 .sidebar h2:hover {
     color: #0056b3;
@@ -129,6 +136,7 @@ body {
 .sidebar-footer p {
     margin: 0;
     color: #555;
+    margin-left: 40px;
 }
 
 .sidebar-footer a {
@@ -142,7 +150,7 @@ body {
 }
 
 .sidebar-footer .social-icons {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .sidebar-footer .social-icons a {
@@ -155,3 +163,4 @@ body {
 .sidebar-footer .social-icons a:hover {
     color: #007bff;
 }
+
