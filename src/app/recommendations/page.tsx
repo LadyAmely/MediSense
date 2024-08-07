@@ -1,14 +1,7 @@
-
-import "./sidebar.css";
-import "./header.css";
-import "./footer.css";
-import "./content.css";
-import "./profile.css";
 import Link from "next/link";
 
-import '@fortawesome/fontawesome-free/css/all.min.css';
+export default function Page(){
 
-export default function Home() {
     return (
         <main className="main-container">
 

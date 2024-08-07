@@ -7,19 +7,20 @@ export default function Page(){
 
     return(<main className="main-container">
 
-        <div className="sidebar">
-            <h3>Medical Menu</h3>
 
+        <div className="sidebar">
+            <h3>Control Panel</h3>
             <div className="section">
-                <h2>Medicines Categories</h2>
+                <h2>User Options</h2>
                 <ul>
-                    <li><Link href="/painkillers"><i className="fas fa-pills"></i>Painkillers</Link></li>
-                    <li><Link href="/antibiotics"><i className="fas fa-pills"></i> Antibiotics</Link></li>
-                    <li><Link href="/hypertension"><i className="fas fa-heartbeat"></i>Hypertension</Link></li>
-                    <li><Link href="/antidepressants"><i className="fas fa-pills"></i>Antidepressants</Link></li>
-                    <li><Link href="/dietary_supplements"><i className="fas fa-capsules"></i>Dietary Supplements</Link>
+                    <li><Link href="/home"><i className="fas fa-home"></i>Home</Link></li>
+                    <li><Link href="/profile"><i className="fas fa-user"></i>Profile</Link></li>
+                    <li><Link href="/recommendations"><i className="fas fa-heart"></i>Recommendations</Link>
                     </li>
-                    <li><Link href="/other_categories"><i className="fas fa-ellipsis-h"></i>Other Categories</Link></li>
+                    <li><Link href="/history"><i className="fas fa-history"></i>History</Link></li>
+                    <li><Link href="/calendar"><i className="fas fa-calendar-alt"></i>Calendar</Link></li>
+                    <li><Link href="/logout"><i className="fas fa-sign-out-alt"></i>Log out</Link>
+                    </li>
                 </ul>
             </div>
 
@@ -45,8 +46,6 @@ export default function Page(){
                 </p>
 
             </div>
-
-
         </div>
 
         <div className="header">
@@ -57,9 +56,7 @@ export default function Page(){
                 <a href="#contact">Contact</a>
             </div>
             <div className="actions">
-                <i className="fas fa-search action-btn"></i>
                 <i className="fas fa-cog action-btn"></i>
-                <i className="fas fa-user action-btn"></i>
             </div>
         </div>
 
