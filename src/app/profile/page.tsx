@@ -61,6 +61,55 @@ export default function UserProfile() {
 
             <div className="content">
 
+                <div className="profile-header">
+
+                    <div className="profile-info">
+                        <div className="profile-info-item">
+                            <p className="profile-info-title">Name:</p>
+                            <p className="profile-info-value">Jan</p>
+                        </div>
+                        <div className="profile-info-item">
+                            <p className="profile-info-title">LastName:</p>
+                            <p className="profile-info-value">Kowalski</p>
+                        </div>
+                    </div>
+                    <div className="profile-picture-container">
+
+                        <i className="fas fa-user profile-picture-placeholder"></i>
+
+                    </div>
+                    <div className="profile-info">
+                        <div className="profile-info-item">
+                            <p className="profile-info-title">E-mail:</p>
+                            <p className="profile-info-value">jan.kowalski@example.com</p>
+                        </div>
+                        <div className="profile-info-item">
+                            <p className="profile-info-title">Localization:</p>
+                            <p className="profile-info-value">Warszawa, Poland</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button>Edit profile</button>
+
+                <div className="profile-section">
+                    <h2>Personal Data</h2>
+                    <p>Age: </p>
+                    <p>Gender: </p>
+                    <p>Weight: </p>
+                    <p>Height: </p>
+                </div>
+
+                <div className="profile-section">
+                    <h2>Medical Data</h2>
+                    <p>Diseases: </p>
+                    <p>Allergies: </p>
+                    <p>Currently taking medications: </p>
+                    <p>Medical History: </p>
+                </div>
+
             </div>
 
             <div className="footer">

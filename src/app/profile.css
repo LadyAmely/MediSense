@@ -4,11 +4,7 @@
     padding: 20px;
 }
 
-.profile-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .profile-picture {
     border-radius: 50%;
@@ -17,10 +13,15 @@
 }
 
 .profile-section {
-    margin: 20px 0;
+
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+
 }
 
 .profile-section h2 {
@@ -41,15 +42,88 @@
     margin: 5px 0;
 }
 
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.profile-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+.profile-info-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.profile-info-value {
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+
+.profile-picture-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-left: 20px;
+    margin-top:20px;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture-placeholder {
+    font-size: 4rem;
+    color: #ccc;
+}
+
 button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
     cursor: pointer;
+    margin-left: 41.5%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
+
+
